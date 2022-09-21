@@ -2,6 +2,8 @@
 
 html {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
   -webkit-text-size-adjust: none;
 }
 
@@ -11,6 +13,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
+  -webkit-box-sizing: inherit;
 }
 
 body {

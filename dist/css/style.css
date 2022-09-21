@@ -113,7 +113,6 @@ button {
   padding: 1.2rem 2.3rem;
   border-radius: 10rem;
   background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
-  transition: all ease-in 0.5s;
 }
 .hero .submit__btn img {
   margin-top: -0.2em;
@@ -217,7 +216,6 @@ button {
   }
   .hero .info__submit form {
     margin-left: -0.625rem;
-    width: 85%;
   }
   .hero .info__submit form input {
     height: 75px;

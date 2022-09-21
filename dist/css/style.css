@@ -3,7 +3,6 @@
 /* Gradients */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
 html {
-  font-size: 100%;
   box-sizing: border-box;
 }
 
@@ -12,7 +11,7 @@ html {
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {

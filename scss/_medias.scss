@@ -1,6 +1,5 @@
 @media (min-width: 40em) and (max-width: 64em) {
   .header {
-    width: 100%;
     height: auto;
     padding: 1.875rem 0 1.875rem 3.125rem;
 
@@ -54,14 +53,14 @@
     &__img {
       height: 100vh;
       background-image: url(/images/hero-desktop.jpg);
-      width: 45%;
+      width: 45vw;
     }
 
     .info {
       background-image: url(/images/bg-pattern-desktop.svg);
       background-size: cover;
       background-position: center;
-      width: 55%;
+      width: 55vw;
       padding-left: 12.5rem;
 
       &__title {

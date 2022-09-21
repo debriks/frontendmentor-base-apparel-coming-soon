@@ -86,7 +86,7 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
-  width: 85vw;
+  width: 85%;
 }
 .hero .info__submit form input {
   grid-row: 1;
@@ -188,13 +188,13 @@ button {
   .hero__img {
     height: 100vh;
     background-image: url(/images/hero-desktop.jpg);
-    width: 45vw;
+    width: 45%;
   }
   .hero .info {
     background-image: url(/images/bg-pattern-desktop.svg);
     background-size: cover;
     background-position: center;
-    width: 55vw;
+    width: 55%;
     padding-left: 12.5rem;
   }
   .hero .info__title {
@@ -217,6 +217,7 @@ button {
   }
   .hero .info__submit form {
     margin-left: -0.625rem;
+    width: 85%;
   }
   .hero .info__submit form input {
     height: 75px;

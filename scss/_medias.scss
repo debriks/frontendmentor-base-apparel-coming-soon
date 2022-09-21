@@ -53,14 +53,14 @@
     &__img {
       height: 100vh;
       background-image: url(/images/hero-desktop.jpg);
-      width: 45vw;
+      width: 45%;
     }
 
     .info {
       background-image: url(/images/bg-pattern-desktop.svg);
       background-size: cover;
       background-position: center;
-      width: 55vw;
+      width: 55%;
       padding-left: 12.5rem;
 
       &__title {
@@ -85,6 +85,7 @@
 
         & form {
           margin-left: -0.625rem;
+          width: 85%;
 
           & input {
             height: 75px;

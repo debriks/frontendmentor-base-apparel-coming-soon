@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  display: grid;
+  background: $gradien1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 1.875em;
+
+  &__logo {
+    width: 7.8em;
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    width: 100%;
+    height: 18.75em;
+    background: url(/images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .info {
+    &__title {
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 0.75rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: $darkGrayishRed;
+      margin-top: 4.4rem;
+
+      & span {
+        color: $desaturatedRed;
+        font-weight: 300;
+      }
+    }
+
+    &__text {
+      font-size: 1em;
+      line-height: 1.6;
+      color: $desaturatedRed;
+      margin: 0 auto;
+      padding: 1.5em 2.2em 2.2em 2.2em;
+      text-align: center;
+    }
+
+    &__submit {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      & form {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        width: 85%;
+
+        & input {
+          grid-row: 1;
+          grid-column: 1;
+          height: 3.43em;
+          outline: none;
+          border-radius: 3.1em;
+          border: 1px solid hsla(0, 36%, 70%, 0.6);
+          background: transparent;
+          padding-left: 1.6rem;
+          font-family: $primary-font;
+          font-size: 0.94rem;
+          color: $desaturatedRed;
+        }
+      }
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    color: $desaturatedRed;
+  }
+
+  .submit__btn {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
+    height: 3.27em;
+    justify-self: end;
+    padding: 1.2em 2.3em;
+    border-radius: 10em;
+    background: linear-gradient(
+      135deg,
+      hsla(0, 80%, 86%, 1),
+      hsla(0, 74%, 74%, 1)
+    );
+    transition: all ease-in 0.5s;
+
+    & img {
+      margin-top: -0.2em;
+      position: inherit;
+    }
+  }
+
+  .submit__btn:hover {
+    background: linear-gradient(
+      135deg,
+      hsla(0, 80%, 86%, 0.5),
+      hsla(0, 74%, 74%, 0.5)
+    );
+  }
+
+  .submit__error {
+    position: absolute;
+    width: 1.25em;
+    top: 1.125em;
+    right: 8em;
+    visibility: hidden;
+  }
+
+  .submit__warning {
+    font-size: 0.8em;
+    color: $softRed;
+    align-self: flex-start;
+    margin: 0.8em 0 0 4.3em;
+    visibility: hidden;
+  }
+
+  #email.visible {
+    border: 1px solid $softRed;
+  }
+  .visible {
+    visibility: visible;
+  }
+}

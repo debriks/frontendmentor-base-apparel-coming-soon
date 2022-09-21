@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
     <link
       rel="icon"
       type="image/png"
@@ -11,28 +11,33 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="dist/css/style.css" />
+
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
     <!-- LOGO -->
     <header class="header">
-      <img src="/images/logo.svg" alt="logo" class="header-logo" />
+      <img src="/images/logo.svg" alt="logo" class="header__logo" />
     </header>
 
-    <main class="container">
-      <div class="hero-img"></div>
-      <div class="hero-info">
-        <h1 class="hero-info-title">
+    <!-- HERO -->
+    <main class="hero">
+      <div class="hero__img"></div>
+      <div class="hero__info info">
+        <h1 class="info__title">
           <span> We're</span> <br />
           coming <br />
           soon
         </h1>
-        <p class="hero-info-text">
+        <p class="info__text">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <div class="hero-info-submit">
+
+        <!-- FORM -->
+        <div class="info__submit">
           <form action="/">
             <input
               type="email"
@@ -41,22 +46,24 @@
               placeholder="Email Address"
               autocomplete="off"
             />
-            <div class="hero-info-submit-btn">
-              <button id="btn" aria-label="Submit">
-                <img src="./images/icon-arrow.svg" alt="" class="btn--arrow" />
+            <div class="submit__btn">
+              <button id="btn" aria-label="Submit" class="btn">
+                <img src="./images/icon-arrow.svg" alt="" class="btn__arrow" />
               </button>
             </div>
           </form>
+
+          <!-- WARNINGS -->
           <img
             src="./images/icon-error.svg"
             alt=""
-            class="hero-info-submit-error"
+            class="submit__error"
             id="warningIcon"
           />
-          <p class="hero-info-submit-warning">Please provide a valid email</p>
+          <p class="submit__warning">Please provide a valid email</p>
         </div>
       </div>
     </main>
   </body>
-  <script src="app.js"></script>
+  <script src="/js/app.js"></script>
 </html>

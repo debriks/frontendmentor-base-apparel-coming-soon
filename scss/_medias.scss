@@ -1,0 +1,126 @@
+@media (min-width: 40em) and (max-width: 64em) {
+  .header {
+    width: 100%;
+    height: auto;
+    padding: 1.875em 0 1.875em 3.125em;
+
+    &__logo {
+      width: 11em;
+    }
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      height: 26.25em;
+    }
+
+    .info {
+      &__title {
+        font-size: 4.375em;
+      }
+
+      &__text {
+        margin: 0 auto;
+        font-size: 1.25em;
+        max-width: 35em;
+        padding-bottom: 1.875em;
+      }
+    }
+    .submit__error {
+      right: 8.75em;
+    }
+  }
+}
+
+@media only screen and (min-width: 64.1em) {
+  .header {
+    position: absolute;
+    top: 5em;
+    left: 12.5em;
+    padding: 0;
+
+    &__logo {
+      width: 14em;
+    }
+  }
+
+  .hero {
+    flex-direction: row-reverse;
+
+    &__img {
+      height: 100vh;
+      background-image: url(/images/hero-desktop.jpg);
+      width: 45%;
+    }
+
+    .info {
+      background-image: url(/images/bg-pattern-desktop.svg);
+      background-size: cover;
+      background-position: center;
+      width: 55%;
+      padding-left: 12.5em;
+
+      &__title {
+        font-size: 5.6em;
+        padding-top: 2.7em;
+        letter-spacing: 24px;
+        text-align: left;
+      }
+
+      &__text {
+        padding: 0;
+        margin-top: 1.875em;
+        margin-bottom: 3.75em;
+        font-size: 1.3em;
+        text-align: left;
+        margin: 1.875em 0 2em 0;
+        max-width: 28em;
+      }
+
+      &__submit {
+        max-width: 43.75em;
+
+        & form {
+          margin-left: -0.625em;
+
+          & input {
+            height: 75px;
+            background: transparent;
+            padding: 2px 0 0 35px;
+            font-size: 1.25em;
+            border: 3px solid hsla(0, 36%, 70%, 0.4);
+          }
+        }
+      }
+    }
+    .submit__btn {
+      height: 75px;
+      padding: 1em 3.43em;
+
+      & img {
+        width: 1.4em;
+        padding: 0.7em 0 0 0.1em;
+        height: auto;
+      }
+    }
+
+    .submit__error {
+      top: 1.56em;
+      right: 16.5em;
+      width: 1.875em;
+    }
+
+    .submit__warning {
+      font-size: 1em;
+      margin: 1em 0 0 1.625em;
+    }
+
+    #email.visible {
+      border: 2px solid $softRed;
+    }
+  }
+}

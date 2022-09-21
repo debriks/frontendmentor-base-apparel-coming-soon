@@ -17,7 +17,7 @@ html {
 body {
   font-family: $primary-font;
   display: grid;
-  background: $gradien1;
+  background: $gradient1;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -37,10 +37,10 @@ button {
 .header {
   width: 100%;
   height: auto;
-  padding: 1.875em;
+  padding: 1.875rem;
 
   &__logo {
-    width: 7.8em;
+    width: 7.8rem;
   }
 }
 
@@ -51,7 +51,7 @@ button {
 
   &__img {
     width: 100%;
-    height: 18.75em;
+    height: 18.75rem;
     background: url(/images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,11 +75,11 @@ button {
     }
 
     &__text {
-      font-size: 1em;
+      font-size: 1rem;
       line-height: 1.6;
       color: $desaturatedRed;
       margin: 0 auto;
-      padding: 1.5em 2.2em 2.2em 2.2em;
+      padding: 1.5rem 2.2rem 2.2rem 2.2rem;
       text-align: center;
     }
 
@@ -97,9 +97,9 @@ button {
         & input {
           grid-row: 1;
           grid-column: 1;
-          height: 3.43em;
+          height: 3.43rem;
           outline: none;
-          border-radius: 3.1em;
+          border-radius: 3.1rem;
           border: 1px solid hsla(0, 36%, 70%, 0.6);
           background: transparent;
           padding-left: 1.6rem;
@@ -119,10 +119,10 @@ button {
     position: relative;
     grid-row: 1;
     grid-column: 1;
-    height: 3.27em;
+    height: 3.43rem;
     justify-self: end;
-    padding: 1.2em 2.3em;
-    border-radius: 10em;
+    padding: 1.2rem 2.3rem;
+    border-radius: 10rem;
     background: linear-gradient(
       135deg,
       hsla(0, 80%, 86%, 1),
@@ -146,17 +146,17 @@ button {
 
   .submit__error {
     position: absolute;
-    width: 1.25em;
-    top: 1.125em;
-    right: 8em;
+    width: 1.25rem;
+    top: 1.125rem;
+    right: 8rem;
     visibility: hidden;
   }
 
   .submit__warning {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: $softRed;
     align-self: flex-start;
-    margin: 0.8em 0 0 4.3em;
+    margin: 0.8rem 0 0 4.3rem;
     visibility: hidden;
   }
 

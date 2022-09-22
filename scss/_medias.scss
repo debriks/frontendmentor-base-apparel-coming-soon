@@ -38,8 +38,8 @@
 @media only screen and (min-width: 64em) {
   .header {
     position: absolute;
-    top: 5.5rem;
-    left: 12.5rem;
+    top: 5rem;
+    left: 12.7rem;
     padding: 0;
 
     &__logo {
@@ -53,63 +53,62 @@
     &__img {
       height: 100vh;
       background-image: url(/images/hero-desktop.jpg);
-      width: 45%;
+      width: 40%;
     }
 
     .info {
       background-image: url(/images/bg-pattern-desktop.svg);
       background-size: cover;
       background-position: center;
-      width: 55%;
+      width: 60%;
       padding-left: 12.5rem;
 
       &__title {
-        font-size: 5.6rem;
-        padding-top: 15rem;
-        letter-spacing: 24px;
+        font-size: 5rem;
+        line-height: 1.1;
+        padding-top: 13.5rem;
+        letter-spacing: 22px;
         text-align: left;
       }
 
       &__text {
         padding: 0;
-        margin-top: 1.875rem;
-        margin-bottom: 3.75rem;
-        font-size: 1.3rem;
+        font-size: 1.27rem;
         text-align: left;
-        margin: 1.875rem 0 2em 0;
+        margin: 1.875rem 0 2.5em 0;
         max-width: 35rem;
       }
 
       &__submit {
-        max-width: 43.75rem;
+        max-width: 42rem;
 
         & form {
           margin-left: -0.625rem;
 
           & input {
-            height: 75px;
+            height: 70px;
             background: transparent;
             padding: 2px 0 0 35px;
             font-size: 1.25rem;
-            border: 3px solid hsla(0, 36%, 70%, 0.4);
+            border: 2px solid hsla(0, 36%, 70%, 0.4);
           }
         }
       }
     }
     .submit__btn {
-      height: 75px;
+      height: 70px;
       padding: 1rem 3.43rem;
 
       & img {
-        width: 1.3rem;
-        padding: 0.6rem 0 0 0.2rem;
+        width: 1.2rem;
+        padding: 0.4rem 0 0 0.2rem;
         height: auto;
       }
     }
 
     .submit__error {
-      top: 1.56rem;
-      right: 16.5rem;
+      top: 1.2rem;
+      right: 16.7rem;
       width: 1.875rem;
     }
 

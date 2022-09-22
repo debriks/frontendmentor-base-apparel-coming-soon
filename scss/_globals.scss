@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -57,7 +61,7 @@ button {
   .info {
     &__title {
       font-size: 2.8rem;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 1.1;
       letter-spacing: 0.75rem;
       text-align: center;
@@ -110,7 +114,7 @@ button {
   }
 
   input::-webkit-input-placeholder {
-    color: $desaturatedRed;
+    color: hsla(0, 36%, 70%, 0.5);
   }
 
   .submit__btn {
